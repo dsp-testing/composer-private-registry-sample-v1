@@ -1,0 +1,11 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://jfrogghdemo.jfrog.io/artifactory/api/composer/dependabot-php/"
+        }
+    ],
+    "require": {
+        "phpstan/phpstan": "2.0.0"
+    }
+}

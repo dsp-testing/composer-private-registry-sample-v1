@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    versioning-strategy: "increase"
+    schedule:
+      interval: "daily"
+    registries:
+      - composer-repository
+
+registries:
+  composer:
+    type: composer-repository
+    url: https://jfrogghdemo.jfrog.io/artifactory/api/composer/dependabot-php/
+    username: thavaahariharangit
+    password: "${{secrets.JFROG_ARTIFACTORY_TOKEN}}"
