@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5df42bb518f172a2be40c6df4ab467fb",
+    "content-hash": "005889a513f05dd52ffcc57b55b5c8df",
     "packages": [
         {
             "name": "phpstan/phpstan",
@@ -16,7 +16,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://jfrogghdemo.jfrog.io/artifactory/api/composer/dependabot-php/vcs-dists/zip/phpstan/phpstan/72115ab2bf1e40af1f9b238938d493ba7f3221e7",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/72115ab2bf1e40af1f9b238938d493ba7f3221e7",
                 "reference": "72115ab2bf1e40af1f9b238938d493ba7f3221e7",
                 "shasum": ""
             },
@@ -36,6 +36,7 @@
                     "bootstrap.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],

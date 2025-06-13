@@ -2,9 +2,10 @@ version: 2
 updates:
   - package-ecosystem: "composer"
     directory: "/"
-    versioning-strategy: "increase"
     schedule:
-      interval: "daily"
+      interval: "monthly"
+    reviewers:
+      - "visma-verzuim/phx-php-dependency-updaters"
     groups:
       phpstan:
         dependency-type: "development"
@@ -16,12 +17,7 @@ updates:
       production-patches:
         dependency-type: "production"
         update-types: [ "patch" ]
-    registries:
-      - composer
-
-registries:
-  composer:
-    type: composer-repository
-    url: https://jfrogghdemo.jfrog.io/artifactory/api/composer/dependabot-php/
-    username: thavaahariharangit@github.com
-    password: "${{secrets.JFROG_ARTIFACTORY_TOKEN}}"
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - "version-update:semver-major"
