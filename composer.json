@@ -9,6 +9,6 @@
         }
     ],
     "require": {
-        "phpstan/phpstan": "2.1.16"
+        "phpstan/phpstan": "2.0.0"
     }
 }

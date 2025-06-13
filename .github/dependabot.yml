@@ -5,6 +5,17 @@ updates:
     versioning-strategy: "increase"
     schedule:
       interval: "daily"
+    groups:
+      phpstan:
+        dependency-type: "development"
+        patterns:
+          - "larastan/larastan"
+          - "phpstan/*"
+      dev-dependencies:
+        dependency-type: "development"
+      production-patches:
+        dependency-type: "production"
+        update-types: [ "patch" ]
     registries:
       - composer
 
